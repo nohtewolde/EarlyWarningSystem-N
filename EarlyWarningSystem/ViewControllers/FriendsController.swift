@@ -2,8 +2,8 @@
 //  FriendsController.swift
 //  EarlyWarningSystem
 //
-//  Created by Hajar Mouaddine on 12/24/18.
-//  Copyright © 2018 Hajar Mouaddine. All rights reserved.
+//  Created  on 12/24/18.
+
 //
 
 import UIKit
@@ -18,7 +18,6 @@ class FriendsController: BaseViewController, FriendDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "blueBackground")!)
         
         friendsCollecView.delegate = self
         friendsCollecView.dataSource = self

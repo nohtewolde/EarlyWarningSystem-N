@@ -2,8 +2,8 @@
 //  MAPController.swift
 //  EarlyWarningSystem
 //
-//  Created by Hajar Mouaddine on 12/25/18.
-//  Copyright © 2018 Hajar Mouaddine. All rights reserved.
+//  Created  on 12/25/18.
+
 //
 
 import UIKit
@@ -21,7 +21,6 @@ class MAPController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "blueBackground")!)
         googleMaps.delegate = self
     }
     
@@ -30,7 +29,7 @@ class MAPController: UIViewController {
             showLocation(img : loc["icon"] as! UIImage, latitude: loc["latitude"] as! Double, longitude: loc["longitude"] as! Double)
         }
         let position = CLLocationCoordinate2DMake(locations.last!["latitude"] as! CLLocationDegrees, locations.last!["longitude"] as! CLLocationDegrees)
-        self.googleMaps.camera = GMSCameraPosition.camera(withTarget: position, zoom: 10)
+        self.googleMaps.camera = GMSCameraPosition.camera(withTarget: position, zoom: 15)
     }
     
     func showLocation(img : UIImage, latitude : Double, longitude : Double) {

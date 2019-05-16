@@ -1,10 +1,3 @@
-//
-//  Models.swift
-//  EarlyWarningSystem
-//
-//  Created by Hajar Mouaddine on 12/22/18.
-//  Copyright © 2018 Hajar Mouaddine. All rights reserved.
-//
 
 import UIKit
 
@@ -43,3 +36,5 @@ struct Conversation {
     let receiverID : String
     let time : String
 }
+
+

@@ -20,6 +20,6 @@ target 'EarlyWarningSystem' do
 
   pod 'Fabric', '~> 1.9.0'
   pod 'Crashlytics', '~> 3.12.0'
-  # Pods for EarlyWarningSystem
+   Pods for EarlyWarningSystem
 
 end

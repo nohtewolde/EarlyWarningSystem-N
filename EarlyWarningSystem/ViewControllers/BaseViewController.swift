@@ -1,10 +1,4 @@
-//
-//  BaseViewController.swift
-//  SwiftDemoJsonParsing
-//
-//  Created by Lucky  on 5/5/17.
-//  Copyright © 2017 Lucky . All rights reserved.
-//
+
 
 import UIKit
 class BaseViewController: UIViewController {
@@ -13,7 +7,7 @@ class BaseViewController: UIViewController {
  
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "blueBackground")!)
+        assignbackground()
         self.navigationItem.backBarButtonItem?.title = ""
         //self.navigationItem.leftBarButtonItem = nil;
         let backButton = UIBarButtonItem(title: "", style: UIBarButtonItem.Style.plain, target: nil, action: nil)
@@ -33,5 +27,18 @@ class BaseViewController: UIViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    
+    func assignbackground(){
+        let background = UIImage(named: "blueBackground")
+        var imageView : UIImageView!
+        imageView = UIImageView(frame: view.bounds)
+        imageView.contentMode =  UIView.ContentMode.scaleAspectFill
+        imageView.clipsToBounds = true
+        imageView.image = background
+        imageView.center = view.center
+        view.addSubview(imageView)
+        self.view.sendSubviewToBack(imageView)
     }
 }

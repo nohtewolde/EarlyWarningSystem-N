@@ -2,8 +2,8 @@
 //  EarthQuakeController.swift
 //  EarlyWarningSystem
 //
-//  Created by Hajar Mouaddine on 12/27/18.
-//  Copyright © 2018 Hajar Mouaddine. All rights reserved.
+//  Created  on 12/27/18.
+
 //
 
 import UIKit
@@ -18,7 +18,6 @@ class EarthQuakeController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "blueBackground")!)
     }
     
     override func viewWillAppear(_ animated: Bool) {

@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  EarlyWarningSystem
-//
-//  Created by Hajar Mouaddine on 12/22/18.
-//  Copyright © 2018 Hajar Mouaddine. All rights reserved.
-//
 
 import UIKit
 import Firebase
@@ -16,8 +9,8 @@ import Fabric
 import UserNotifications
 import FirebaseMessaging
 
-let GoogleKey = "AIzaSyBalj8ZxHob3n5A5os79NYnVyIvxMQeeKY"
-let placesKey = "AIzaSyBalj8ZxHob3n5A5os79NYnVyIvxMQeeKY"
+let GoogleKey = "AIzaSyD0L51CJD3rD_ZkL2vkaO65vlM1lovP91E"
+let placesKey = "AIzaSyD0L51CJD3rD_ZkL2vkaO65vlM1lovP91E"
 
 let English = "en"
 let French = "fr"

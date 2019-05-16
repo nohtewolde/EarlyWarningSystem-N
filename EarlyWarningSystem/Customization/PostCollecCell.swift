@@ -2,8 +2,8 @@
 //  PostCollecCell.swift
 //  EarlyWarningSystem
 //
-//  Created by Hajar Mouaddine on 12/26/18.
-//  Copyright © 2018 Hajar Mouaddine. All rights reserved.
+//  Created  on 12/26/18.
+
 //
 
 import UIKit

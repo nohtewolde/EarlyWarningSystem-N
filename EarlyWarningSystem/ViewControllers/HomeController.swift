@@ -1,9 +1,6 @@
 //
 //  HomeController.swift
-//  EarlyWarningSystem
-//
-//  Created by Hajar Mouaddine on 12/22/18.
-//  Copyright © 2018 Hajar Mouaddine. All rights reserved.
+
 //
 
 import UIKit
@@ -19,6 +16,8 @@ class HomeController: BaseViewController, CLLocationManagerDelegate {
     var earthQuakeLocs = [Location]()
     
     var location : CLLocation?
+    var latitude: Double?
+    var longitude: Double?
     var locationManager = CLLocationManager()
 
     @IBOutlet weak var collectionV: UICollectionView!
@@ -33,9 +32,9 @@ class HomeController: BaseViewController, CLLocationManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "blueBackground")!)
         setUpLocation()
-        
+        latitude = location?.coordinate.latitude
+        longitude = location?.coordinate.longitude
         collectionV.delegate = self
         collectionV.dataSource = self
         

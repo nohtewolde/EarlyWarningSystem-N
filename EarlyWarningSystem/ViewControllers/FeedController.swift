@@ -2,8 +2,8 @@
 //  FeedController.swift
 //  EarlyWarningSystem
 //
-//  Created by Hajar Mouaddine on 12/26/18.
-//  Copyright © 2018 Hajar Mouaddine. All rights reserved.
+//  Created  on 12/26/18.
+
 //
 
 import UIKit
@@ -15,12 +15,11 @@ class FeedController: BaseViewController {
     @IBOutlet weak var feedCollecView: UICollectionView!
     
     var data = [[String:Any]]()
-    var refresher : UIRefreshControl!
+    var refresher = UIRefreshControl()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "blueBackground")!)
-        refresher = UIRefreshControl()
+       
         refresher.addTarget(self, action: #selector(getPosts), for: .valueChanged)
         
         feedCollecView.delegate = self

@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  EarlyWarningSystem
-//
-//  Created by Hajar Mouaddine on 12/22/18.
-//  Copyright © 2018 Hajar Mouaddine. All rights reserved.
-//
 
 import UIKit
 import TWMessageBarManager
@@ -19,7 +12,7 @@ class SignInController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "blueBackground")!)
+        assignbackground()
         setUpLanguageCode()
         // Do any additional setup after loading the view, typically from a nib.
         setUpTxtFields(txtF: txtEmail, img: UIImage(named: "emailIcon") ?? UIImage())

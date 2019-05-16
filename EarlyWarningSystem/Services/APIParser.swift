@@ -2,8 +2,8 @@
 //  APIParser.swift
 //  EarlyWarningSystem
 //
-//  Created by Hajar Mouaddine on 12/23/18.
-//  Copyright © 2018 Hajar Mouaddine. All rights reserved.
+//  Created  on 12/23/18.
+
 //
 
 import Foundation

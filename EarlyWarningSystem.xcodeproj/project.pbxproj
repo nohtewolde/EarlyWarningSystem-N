@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D52FC3222666D2A002E6CD2 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D52FC3122666D2A002E6CD2 /* Chat.swift */; };
 		6DCBA8402261097700454A5E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6DCBA83F2261097700454A5E /* GoogleService-Info.plist */; };
 		A8D62995623D86FF1421CC45 /* Pods_EarlyWarningSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B0F40EA3C09B25DB57C2E4A /* Pods_EarlyWarningSystem.framework */; };
 		B904604F21D04CEA00091285 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B904604E21D04CEA00091285 /* APIHandler.swift */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		5B0F40EA3C09B25DB57C2E4A /* Pods_EarlyWarningSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EarlyWarningSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D52FC3122666D2A002E6CD2 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		6DCBA83F2261097700454A5E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A6119A4A08F535DF92B37D9F /* Pods-EarlyWarningSystem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EarlyWarningSystem.release.xcconfig"; path = "Pods/Target Support Files/Pods-EarlyWarningSystem/Pods-EarlyWarningSystem.release.xcconfig"; sourceTree = "<group>"; };
 		B904604E21D04CEA00091285 /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 		B943D9CB21CEA3E400B2E2B1 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				6D52FC3122666D2A002E6CD2 /* Chat.swift */,
 				B943D9CF21CEB6C000B2E2B1 /* BaseViewController.swift */,
 				B943D9BB21CEA38C00B2E2B1 /* SignInController.swift */,
 				B9CEE6BD21CEC9670090C0E1 /* SignUpControllerViewController.swift */,
@@ -417,6 +420,7 @@
 				B99CC23B21D285AD0029DE07 /* FriendCollecCell.swift in Sources */,
 				B9CEE6C221CEE3AF0090C0E1 /* FireBaseServices.swift in Sources */,
 				B943D9D021CEB6C000B2E2B1 /* BaseViewController.swift in Sources */,
+				6D52FC3222666D2A002E6CD2 /* Chat.swift in Sources */,
 				B9CBAB9C21D52E7600ED07DE /* EarthQuakeController.swift in Sources */,
 				B99CC23D21D2A24C0029DE07 /* MAPController.swift in Sources */,
 				B9CEE6C421CEE9C80090C0E1 /* Models.swift in Sources */,
@@ -581,7 +585,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = EarlyWarningSystem/EarlyWarningSystem.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = RQAE768Z9N;
 				INFOPLIST_FILE = EarlyWarningSystem/Info.plist;
@@ -592,7 +596,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.EarlyWarningSystemNoh.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = EWSHajarProfile;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -605,7 +609,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = EarlyWarningSystem/EarlyWarningSystem.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RQAE768Z9N;
 				INFOPLIST_FILE = EarlyWarningSystem/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -615,7 +619,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.EarlyWarningSystemNoh.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = EWSHajarProfile;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

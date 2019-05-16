@@ -1,9 +1,6 @@
 //
 //  FireBaseServices.swift
-//  EarlyWarningSystem
-//
-//  Created by Hajar Mouaddine on 12/22/18.
-//  Copyright © 2018 Hajar Mouaddine. All rights reserved.
+
 //
 
 import Foundation
@@ -280,6 +277,8 @@ class FireBaseServices {
         }
     }
     
+    
+    
     func addPost(img : UIImage , postdesc : String? , completionHandler: @escaping completion) {
         let user = Auth.auth().currentUser
         let postKey = self.reference.child("Post").childByAutoId().key
@@ -346,6 +345,7 @@ class FireBaseServices {
         
     }
     
+    
     func sendText(message : String, friendID : String, completionHandler: @escaping completion) {
         let user = Auth.auth().currentUser
         let keysorted : [String] = [(user?.uid)!,friendID].sorted(by: {$0>$1})
@@ -357,6 +357,45 @@ class FireBaseServices {
         }
     }
     
+    
+//    func chatKey(uid: String, friendID: String) -> String {
+//        return uid < friendID ? "\(uid)\(friendID)" : "\(friendID)\(uid)"
+//    }
+//
+//    func sendText(friendID: String, msg: String, errorHandler: @escaping (Error?) -> ()) {
+//        let time = Date().timeIntervalSince1970
+//        let uid = (Auth.auth().currentUser?.uid)!
+//        let key = chatKey(uid: uid, friendID: friendID)
+//        let msgKey = "\(Int(time))"
+//        let info = [
+//            "receiverID": friendID,
+//            "message": msg,
+//            "time": String(time)
+//        ]
+//
+//        self.reference.child("Conversations").child(key).child(msgKey).setValue(info) { error, ref in
+//            errorHandler(error)
+//        }
+//
+//    }
+//
+//    func getConversation(friendID: String, completion: @escaping ([Conversation]?) -> Void) {
+//        let uid = (Auth.auth().currentUser?.uid)!
+//        let key = chatKey(uid: uid, friendID: friendID)
+//        self.reference.child("Conversations").child(key).observeSingleEvent(of: .value) { (snapshot) in
+//            if let msgList = snapshot.value as? [String : Any] {
+//                let chatList = msgList.map({ (timeKey, info) -> Conversation in
+//                    let chatInfo = info as! [String : Any]
+//                    let convo = Conversation(
+//                        message: chatInfo["message"] as! String,
+//                        receiverID: chatInfo["receiverID"] as! String,
+//                        time: chatInfo["time"] as! String)
+//                    return convo
+//                })
+//                completion(chatList)
+//            } else { completion(nil) }
+//        }
+//    }
     func getConvo(friendID : String, completionHandler: @escaping ([Conversation]?)->()) {
         let user = Auth.auth().currentUser
         let keysorted : [String] = [(user?.uid)!,friendID].sorted(by: {$0>$1})

@@ -1114,7 +1114,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" red="0.37155200669999999" green="0.77181572649999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.47956615686416626" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
@@ -1813,7 +1813,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BAA-Sm-wWZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2868" y="875.71214392803608"/>
+            <point key="canvasLocation" x="2868" y="917"/>
         </scene>
         <!--Users-->
         <scene sceneID="qCu-9Z-8Tg">
@@ -1883,7 +1883,7 @@
         <image name="feed" width="25" height="25"/>
         <image name="friends" width="25" height="25"/>
         <image name="home" width="25" height="25"/>
-        <image name="logo" width="170" height="170"/>
+        <image name="logo" width="162.5" height="130"/>
         <image name="map" width="25" height="25"/>
         <image name="more" width="25" height="25"/>
         <image name="no-photo" width="25" height="25"/>

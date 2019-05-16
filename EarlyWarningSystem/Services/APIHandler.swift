@@ -2,8 +2,8 @@
 //  APIHandler.swift
 //  EarlyWarningSystem
 //
-//  Created by Hajar Mouaddine on 12/23/18.
-//  Copyright © 2018 Hajar Mouaddine. All rights reserved.
+//  Created  on 12/23/18.
+
 //
 
 import Foundation
@@ -13,7 +13,7 @@ class APIHandler {
     typealias completion = ([Weather]?)->Void
     typealias completion2 = ([Location]?)->()
     
-    let urlFormat1 = "https://api.darksky.net/forecast/62ae1530a99865090bbb88b6de680476/%@,%@"
+    let urlFormat1 = "https://api.darksky.net/forecast/5c4ff1491baaa0a640cdb4b88279ca0f/%@,%@"
     let urlFormat2 = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.geojson"
     
     func getWeatherInfo(latitude : Double, longitude : Double, completionHandler : @escaping completion) {

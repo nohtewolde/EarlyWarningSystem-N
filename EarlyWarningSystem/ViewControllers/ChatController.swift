@@ -2,8 +2,7 @@
 //  ChatController.swift
 //  EarlyWarningSystem
 //
-//  Created by Hajar Mouaddine on 12/27/18.
-//  Copyright © 2018 Hajar Mouaddine. All rights reserved.
+//
 //
 
 import UIKit
@@ -26,7 +25,6 @@ class ChatController: BaseViewController , UITextViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "blueBackground")!)
         convoCollecView.delegate = self
         convoCollecView.dataSource = self
         
